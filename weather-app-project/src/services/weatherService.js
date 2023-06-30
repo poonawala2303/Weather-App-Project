@@ -27,6 +27,8 @@ const formatCurrentWeather = (data) => {
     wind: { speed },
   } = data;
 
+
+
   const { main: details, icon } = weather[0];
 
   return {
