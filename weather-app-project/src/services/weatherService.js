@@ -12,6 +12,7 @@ const getWeatherData = (infoType, searchParams) => {
 
 
   return fetch(url).then((res) => res.json());
+  
 };
 
 
@@ -55,13 +56,7 @@ const formatForecastWeather = (data) => {
   
      let {timezone,hourly} = data;
     
-//     daily = daily.slice(1, 6).map((d) => {
-//     return {
-//       title: formatToLocalTime(d.dt, timezone, "ccc"),
-//       temp: d.temp.day,
-//       icon: d.weather[0].icon,
-//     };
-//   });
+
 
   hourly = hourly.slice(1,4).map((d) => {
     return {
