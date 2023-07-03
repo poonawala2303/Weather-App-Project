@@ -15,7 +15,7 @@ import 'react-toastify/dist/ReactToastify.css';
 
 function App() {
 
-  const [query ,setQuery] = useState({q:'kalyan'})
+  const [query ,setQuery] = useState({q:'kharghar'})
   const [units ,setUnits] = useState('metric')
   const [weather , setWeather] = useState(null)
 
@@ -55,7 +55,7 @@ function App() {
   }
 
   return (
-    <div className={`mx-auto max-w-screen-md mt-4 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400 ${formatBg()}`}>
+    <div className={`mx-auto max-w-screen-md mt-8 py-5 px-32 bg-gradient-to-br from-cyan-700 to-blue-700 h-fit shadow-xl shadow-gray-400 ${formatBg()} rounded-lg`}>
       <TopButtons setQuery={setQuery}/>
       <Inputs setQuery={setQuery} units={units} setUnits={setUnits}/>
       
